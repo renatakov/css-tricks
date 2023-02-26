@@ -79,3 +79,41 @@ li{
   z-index: -1;
   transition: all 1s ease-in-out;
 }
+
+.third-div>div:first-child{
+  width: 100px;
+  height: 100px;
+  background-color: #3a90aa;
+}
+
+.third-div>div:last-child{
+  width: 100px;
+  height: 100px;
+  background-color: #dfd732;
+  position: relative;
+  top: -80px;
+  left: 20px;
+}
+.third-div>div:last-child:hover{
+  animation: box 5s ease-in 1s;
+}
+
+@keyframes box {
+  0%{
+    transform: translateX(120px);
+  }
+  25%{
+    transform: translateY(150px);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  75%{
+    transform: scale(1);
+  }
+  100%{
+    transform: translate(0px, 0px);
+  }
+}
+
+
