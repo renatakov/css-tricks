@@ -1,0 +1,81 @@
+body{
+  transition: all 0.2s ease-in-out;
+}
+li{
+  list-style: none;
+}
+.first-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1919;
+  width: 10%;
+  border-radius: 20px;
+}
+.first-div > input{
+  opacity: 0;
+  position: relative;
+  left: 25%;
+}
+.first-div::after{
+  content: '';
+  position: relative;
+  left: 17px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.2s ease-out;
+}
+
+.checked > input{
+  left: -10%;
+}
+
+.checked::after{
+  left: -38px;
+}
+.menu-burger{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  transition: all 0.3 ease-out;
+}
+
+.menu-burger > span{
+  width: 30px;
+  height: 4px;
+  background-color: #1c1919;
+}
+.menu-burger > span:not(span:last-child){
+  margin-bottom: 4px;
+}
+
+.menu>span:nth-child(2){
+  transform: rotate(45deg) translateX(-5px);
+}
+.menu>span:first-child{
+  transform: rotate(-45deg) translateX(-5px);
+}
+.menu>span:last-child{
+  display: none;
+}
+
+.second-div>div:first-child{
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+}
+.second-div>div:last-child{
+  width: 100px;
+  height: 100px;
+  background-color: #b22929;
+  position: relative;
+  top: -80px;
+  left: 20px;
+}
+
+.second-div>div:last-child:hover{
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
