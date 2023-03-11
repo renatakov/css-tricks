@@ -170,3 +170,23 @@ img{
 .item3 {
   background-color: #7b3778;
 }
+
+.box{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  margin-top: 2rem;
+  animation: gradient .6s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0%{
+    background: linear-gradient(90deg, #ff5858 40%, #35a857 90%);
+  }
+  50%{
+    background: linear-gradient(90deg, #0800ff 30%, #3559a8 80%);
+  }
+  100%{
+    background: linear-gradient(90deg, #80296d 10%, #35a0a8 90%);
+  }
+}
