@@ -135,3 +135,38 @@ img{
     transform: rotate(45deg);
   }
 }
+
+.wrapper{
+  border: 1px solid #ff8686;
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 900px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.wrapper > p{
+  border: 1px solid #000;
+}
+
+.container-box {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+}
+.item{
+  width: 100px;
+  height: 100px;
+  flex: 0 1 20%;
+}
+.item1 {
+  background-color: #ff5858;
+}
+.item2 {
+  flex: 1 1 auto;
+  background-color: #35a857;
+}
+.item3 {
+  background-color: #7b3778;
+}
