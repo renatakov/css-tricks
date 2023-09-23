@@ -315,3 +315,30 @@ body{
 
   grid-area: header;
 }
+
+audio{
+  width: 300px;
+  border: 5px solid #7b6f6f;
+  border-radius: 32px;
+  margin: 20px auto;
+}
+
+/* Стилизация элемента управления воспроизведением */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button{
+  
+}
+
+/* Стилизация полосы проигрывания */
+audio::-webkit-media-controls-timeline {
+  /* Задайте стили для полосы проигрывания */
+  color: #6c71b2;
+}
+
+/* Стилизация времени воспроизведения */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  /* Задайте стили для отображения текущего времени и оставшегося времени */
+  font-size: 18px;
+  color: #333;
+}
