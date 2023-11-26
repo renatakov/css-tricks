@@ -219,12 +219,44 @@ transform-box: fill-box;
 
 /* -------------- GRID-ПРАКТИКА -------------------- */
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
 body{
-  background-color: #262525;
+  background: #e4e2e2;
+  font-family: 'Play', sans-serif;
 }
-.grid{
-  
+
+.wrap{
+
 }
+
+.wrap__item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap__item > img{
+  width: clamp(300px, 50vw, 600px);
+  object-fit: contain;
+}
+
+li::before{
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border:2px solid #000;
+  box-shadow: inset 0px 0px 0px 2px #fff;
+  background: #000000;
+  transform: rotate(45deg);
+}
+/* 
 
 .grid-container{
   display: grid;
@@ -295,24 +327,20 @@ body{
 
 .article{
   background-color: #a3a060;
-
   grid-area: article;
 }
 
 .ads{
   background-color: #6c71b2;
-
   grid-area: ads;
 }
 
 .footer{
   background-color: #b26c9e;
-
   grid-area: footer;
 }
 .header{
   background-color: #6cb28a;
-
   grid-area: header;
 }
 
@@ -323,22 +351,14 @@ audio{
   margin: 20px auto;
 }
 
-/* Стилизация элемента управления воспроизведением */
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-pause-button{
-  
-}
-
-/* Стилизация полосы проигрывания */
 audio::-webkit-media-controls-timeline {
-  /* Задайте стили для полосы проигрывания */
+
   color: #6c71b2;
 }
 
-/* Стилизация времени воспроизведения */
+
 audio::-webkit-media-controls-current-time-display,
 audio::-webkit-media-controls-time-remaining-display {
-  /* Задайте стили для отображения текущего времени и оставшегося времени */
   font-size: 18px;
   color: #333;
-}
+} */
