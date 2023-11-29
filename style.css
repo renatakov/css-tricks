@@ -260,6 +260,11 @@ li::before{
   background: #000000;
   transform: rotate(45deg);
 }
+
+.controlers{
+  width: 20%;
+  margin-inline: auto;
+}
 #btnNext,
 #btnPrev{
   border: 1px solid #000;
