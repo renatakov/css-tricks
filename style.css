@@ -226,10 +226,11 @@ transform-box: fill-box;
   list-style: none;
 }
 
-body{
+/* body{
   background: #e4e2e2;
   font-family: 'Play', sans-serif;
 }
+
 
 .wrapper__item{
   display: flex;
@@ -270,7 +271,7 @@ li::before{
   border: 1px solid #000;
   padding: 0.2rem 1rem;
   background: #fff;
-}
+} */
 /* 
 
 .grid-container{
@@ -377,3 +378,22 @@ audio::-webkit-media-controls-time-remaining-display {
   font-size: 18px;
   color: #333;
 } */
+
+
+/* --------------------------------- */
+
+.christmasDiv{
+  height: 100vh;
+  background: url("https://clipart-library.com/newimages/christmas-background-images-60.jpg");
+  background-position: 70% 100%;
+  overflow: hidden;
+  transition: 1s ease-out;
+}
+.santaImg{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 200px;
+  transition: 1s ease-out;
+
+}
