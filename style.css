@@ -382,7 +382,7 @@ audio::-webkit-media-controls-time-remaining-display {
 
 /* --------------------------------- */
 
-.christmasDiv{
+/* .christmasDiv{
   height: 100vh;
   background: url("https://clipart-library.com/newimages/christmas-background-images-60.jpg");
   background-position: 70% 100%;
@@ -396,4 +396,29 @@ audio::-webkit-media-controls-time-remaining-display {
   width: 200px;
   transition: 1s ease-out;
 
+} */
+
+/* ----------------------------- */
+
+
+
+
+img{
+  display: block;
+  object-fit: cover;
+  height: 30vh;
+  width: 30%;
+  animation: img 1s infinite;
+}
+
+@keyframes img {
+  0%{
+    transform: translateX(100px);
+  } 
+  50%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(100px);
+  } 
 }
