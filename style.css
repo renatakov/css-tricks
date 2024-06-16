@@ -219,7 +219,7 @@ transform-box: fill-box;
 
 /* -------------- GRID-ПРАКТИКА -------------------- */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -403,7 +403,7 @@ audio::-webkit-media-controls-time-remaining-display {
 
 
 
-img{
+/* img{
   display: block;
   object-fit: cover;
   height: 30vh;
@@ -421,4 +421,47 @@ img{
   100%{
     transform: translateX(100px);
   } 
+} */
+
+/* ----------------------slider 2 --------- */
+
+.slider {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.slider__container {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  padding: 5%;
+}
+
+.slider__container img {
+  transition: all 1s ease-in-out;
+  width: 100%;
+  height: 400px;
+}
+
+.slider__container img:not(.slider__container img:first-child,.slider__container img:nth-child(2) ) {
+display: none;
+}
+
+
+
+.slider__control {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slider__control_btn {
+  background: rgb(34, 37, 70);
+  border: 1px solid #fff;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 20px;
 }
